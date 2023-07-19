@@ -47,3 +47,43 @@ window.addEventListener('DOMContentLoaded', event => {
 var a = new Date().toLocaleDateString();
 var b = a.slice(5, 9);
 document.getElementById("year").innerHTML = b;
+
+
+
+
+// form submission data get api
+
+
+const form_element = document.getElementById('contactForm');
+
+form_element.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+
+    fetch('https://formspree.io/f/xwkdpolq', {
+        method: 'POST',
+        body: JSON.stringify(
+            {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message,
+            }
+        ), headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then((res) => {
+        console.log(res)
+        if (res.ok == true) {
+            alert("form successfully submitted")
+        }
+        form_element.reset();
+    }).catch((error) => {
+        console.log(error)
+    });
+})
