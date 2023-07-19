@@ -83,18 +83,22 @@ html {
 @keyframes beat2 {
   0% {
     transform: rotate(359deg);
+    color: #1a252f;
   }
 
   25% {
     transform: rotate(0deg);
+    color: palevioletred;
   }
 
   50% {
     transform: scale(1);
+    color: orangered;
   }
 
   100% {
     transform: scale(1.2);
+    color: yellow;
   }
 }
 
