@@ -240,6 +240,21 @@ html {
   bottom: 7%;
   left: 2%;
   z-index: 1000;
+  animation: beat3 .5s infinite linear alternate-reverse;
+}
+
+.whatsapp img:hover {
+  animation: none;
+}
+
+@keyframes beat3 {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 992px) {
