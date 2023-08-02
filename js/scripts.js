@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 var a = new Date().toLocaleDateString();
-var b = a.slice(5, 9);
+var b = a.slice(4, 9);
 document.getElementById("year").innerHTML = b;
 
 

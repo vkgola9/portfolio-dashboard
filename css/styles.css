@@ -332,6 +332,14 @@ html {
   color: #fff;
 }
 
+.shadow.portfolio-item.mx-auto {
+  transition: .5s ease;
+}
+
+.shadow.portfolio-item.mx-auto:hover {
+  transform: scale(1.04);
+}
+
 .copyright {
   background-color: #1a252f;
 }
