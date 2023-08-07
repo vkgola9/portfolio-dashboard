@@ -233,7 +233,7 @@ html {
   font-size: 2.75rem;
   line-height: 2.75rem;
   filter: drop-shadow(2px 4px 6px black);
-  animation: name infinite ease-in-out 7s;
+  animation:name infinite ease-in-out 7s alternate;
 }
 @keyframes name {
   0%{
@@ -252,6 +252,7 @@ html {
       text-shadow: -20px -20px 5px rgba(0, 0, 0, .3);
   }
 }
+
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
