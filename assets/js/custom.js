@@ -44,11 +44,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 });
-var a = new Date().toLocaleDateString();
-var b = a.slice(4, 9);
-document.getElementById("year").innerHTML = b;
+// var a = new Date().toLocaleDateString();
+// var b = a.slice(4, 9);
+// document.getElementById("year").innerHTML = b;
 
-
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
 // form submission data get api
